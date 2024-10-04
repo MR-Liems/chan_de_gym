@@ -1,0 +1,107 @@
+1. personal information 
+	name: 
+	student'id:
+	dob:
+	phone-number:
+	gmail:
+	parent: 
+
+1.1 assignment: 
+	select : 	elif deadline > realtime and [Hand-on] == false:
+					return "Forth Coming"
+
+1.2 Recent mock test - check point
+	ID: 
+	Date/Time: 00/00/2000
+	ID Test: 00000
+	Reading: 6.5
+	Listening: 6.5
+	Writing: 6.0
+	Speaking: 5.5
+	Overall: 6.0
+
+1.3 check point process 
+	id: 
+	date/time: *
+	overall: *
+
+
+2. class dò theo mã môn của student
+ID
+Class1: *
+Class2: *
+Class3: *
+
+3. Assignment query theo student.ID
+	if [Hand-on] == true: 
+		return "completed"
+	elif deadline > realtime and [Hand-on] == false:
+		return "Forth Coming"
+	elif realtime > deadline and [Hand-on] == false:
+		return "Past due".
+
+
+4. Process
+	4.1 Class: giống mục 2
+	4.2 Assignments: 
+		Id:
+		number of all HW:
+		uncompleted tasks: 
+		completed tasks: 
+		number of Feed-backs: 
+
+	4.3 overall:
+		ID: 
+		number of mock test
+		sum: 
+		Overall: sum/(number of mock test)
+
+	4.4 vinh danh
+		top 5 điểm cao: dùng hàm rank trong sql 
+
+	4.5 mock test -check point giống như 1.3 
+
+	4.6 reading (tuong tự với listening, writing và speaking)
+		ID 
+		number of mocktest
+		sum - reading;
+		avg: sum/ number 
+	4.7 list mock test 
+		ID:
+		select * from mock test 
+		where ID candidate == ID 
+
+
+
+______________________________________________________________________________
+
+
+1. personal information 
+	name: 
+	id:
+	phone-number:
+	role: 
+	gmail:
+
+1.1 top 50 lượt đăng kí gần nhất
+1.2 revenue to chart
+	month: 
+	total revenue: 
+
+2 chọn lớp sau đó hiện danh sách lớp
+
+3 select * from assignment system 
+
+4. select * from tracking 
+
+5. revenue
+	5.1 query tất cả các bills theo 1,3,6,12 tháng 
+	5.2 giống 1.2 
+	5.3 thực hiện bộ nhập tính tổng chi phí
+	5.4 làm tính toán lợi nhuận 
+
+
+6. select * from account
+	select * from login_tracking 
+
+7. select * from mock test

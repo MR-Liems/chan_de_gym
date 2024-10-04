@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form For Admin</title>
+    <link rel="stylesheet" href="../css/login_styles.css"> <!-- Link to the CSS file -->
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .role-buttons {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+        }
+        .role-button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+        .role-button:hover {
+            background-color: #ffc966;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="menu-button" onclick="window.location.href='main_web.html';">
+            <img src="../picture/logo.png" alt="Menu Icon" class="menu-icon">
+        </button>
+    </div>
+    <form class="form" id="loginForm">
+        <span class="heading">Login - ADMIN</span>
+        <span class="LoginName">Login Name</span>
+        <input placeholder="Enter Login Name" type="text" class="input" id="loginName" name="loginName" required />
+        <span class="Password">Password</span>
+        <input placeholder="Enter Password" type="password" class="input" id="password" name="password" required />
+        <span class="forgot"><a href="">forgot password?</a></span>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="role-buttons">
+        <button class="role-button" onclick="window.location.href='login4stu.html';">Student</button>
+        <button class="role-button" onclick="window.location.href='login4tea.html';">Teacher</button>
+        <button class="role-button" onclick="window.location.href='login4ad.html';">Admin</button>
+    </div>
+    <script src="../js/login_script.js"></script> <!-- Link tới file JavaScript -->
+</body>
+</html>
